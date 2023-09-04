@@ -46,7 +46,7 @@ const Header = () => {
           </div>
 
           <div className="ml-10">
-            <a href="#" title="" class="items-center justify-center hidden px-4 py-3 ml-10 text-base font-medium text-[#F8A400] transition-all duration-200 bg-[#EEEDFF] border border-transparent rounded-md lg:inline-flex hover:bg-black focus:bg-black hover:text-white" role="button">
+            <a href="/login" title="" class="items-center justify-center hidden px-4 py-3 ml-10 text-base font-medium text-[#F8A400] transition-all duration-200 bg-[#EEEDFF] border border-transparent rounded-md lg:inline-flex hover:bg-black focus:bg-black hover:text-white" role="button">
               Looking for help
             </a>
             {/* <a href="#" title="" class="items-center justify-center hidden px-4 py-3 ml-6 text-base font-medium text-white transition-all duration-200 bg-[#F8A400] border border-transparent rounded-md lg:inline-flex hover:bg-black focus:bg-black hover:text-white" role="button">

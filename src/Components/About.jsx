@@ -5,14 +5,15 @@ const About = () => {
       <div className="py-8 flex justify-center items-center">
         <h1 className="font-bold text-black text-3xl">What's My Cheva?</h1>
       </div>
-      <div className="mt-8 flex">
-        <div className="w-1/2 mx-10 px-20 py-10 text-lg leading-8 ">
-          <p className="text-black font-normal">My Cheva adalah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry's standard dummy text ever since the 1500s</p>
-        </div>
-        <div className="w-1/2">
-          <img src="./assets/about.svg" className="h-80" />
-        </div>
-      </div>
+      <div className="mt-8 flex ">
+  <div className="w-1/2 mx-10 px-20 py-10 leading-8 sticky top-0  md:text-lg sm:text-sm xs:text-xs " style={{ maxHeight: '80vh' }}>
+    <p className="text-black font-poppins  ">My Cheva adalah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry's standard dummy text ever since the 1500s</p>
+  </div>
+  <div className="w-1/2">
+    <img src="./assets/about.svg" className="h-80" />
+  </div>
+</div>
+
       {/* <div className="flex">
         <div className="w-1/2 mx-4 px-10">
           <img src="/src/assets/services.svg" className="px-8 mx-6 py-8" />
@@ -33,7 +34,7 @@ const About = () => {
               <img src="./assets/services.svg" />
             </div>
 
-            <div className="mx-36">
+            <div className="mx-36 ">
               <h2 class="text-4xl font-bold leading-tight text-black">Perfect Solution for Your Talent.</h2>
               <p class="mt-4 text-base leading-relaxed  text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
               <a href="#" title="" class="items-center justify-center hidden px-4 py-3 text-base font-medium text-white transition-all duration-200 mt-4 bg-[#F8A400] border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700" role="button">

@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 
-const Login = () => {
+const Login = () => 
+{
+	const navigate =useNavigate()
 	return (
 		<section className="flex h-screen items-center">
 			<div className="w-full lg:w-1/2 xl:w-2/5 shrink-0">
@@ -67,8 +70,8 @@ const Login = () => {
 						>
 							Forgot password?
 						</a>
-						<button
-							type="submit"
+						<button  
+							onClick={() =>navigate('/Content')}
 							className="font-semibold bg-[#F8A400] w-full sm:text-base text-sm p-3 sm:p-4 rounded-lg mt-8 2xl:mt-10 shadow-cheva text-white"
 						>
 							Login now
