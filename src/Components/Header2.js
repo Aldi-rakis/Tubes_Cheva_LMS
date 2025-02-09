@@ -16,11 +16,11 @@ const Header2 = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 mb-3 ">
+    <div className="shadow-md w-full z-40 fixed top-0 left-0 mb-3 ">
       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1 ">
-          <img class="w-auto h-8 lg:h-10 mr-3" src="./assets/logo.svg" alt="" />
+          <img className="w-auto h-8 lg:h-10 mr-3" src="./assets/logo.svg" alt="" />
           <span>CHEVALIER</span>
         </div>
         {/* Menu icon */}
@@ -37,7 +37,7 @@ const Header2 = () => {
           }`}
         >
           {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 my-7 font-semibold md:m-6">
+            <li key={link.name} className="md:ml-8 md:my-0 my-7 font-semibold md:m-6">
               <a
                 href={link.link}
                 className="text-gray-800 hover:text-[#F8A400]"
@@ -47,7 +47,7 @@ const Header2 = () => {
             </li>
           ))}
 
-          <button className="bg-[#EEEDFF] text-[#F8A400] md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static sm: ">
+          <button className="bg-[#EEEDFF] mr-5 text-[#F8A400] md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static sm: ">
             Looking for help
           </button>
 

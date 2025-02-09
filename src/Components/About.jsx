@@ -1,50 +1,58 @@
 import React from "react";
 const About = () => {
   return (
-    <div id="about">
-      <div className="py-8 flex justify-center items-center">
-        <h1 className="font-bold text-black text-3xl">What's My Cheva?</h1>
-      </div>
-      <div className="mt-8 flex ">
-  <div className="w-1/2 mx-10 px-20 py-10 leading-8 sticky top-0  md:text-lg sm:text-sm xs:text-xs " style={{ maxHeight: '80vh' }}>
-    <p className="text-black font-poppins  ">My Cheva adalah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry's standard dummy text ever since the 1500s</p>
-  </div>
-  <div className="w-1/2">
-    <img src="./assets/about.svg" className="h-80" />
-  </div>
-</div>
 
-      {/* <div className="flex">
-        <div className="w-1/2 mx-4 px-10">
-          <img src="/src/assets/services.svg" className="px-8 mx-6 py-8" />
+    <section id="about" className="px-4 md:px-6 lg:px-8 py-8 md:py-12">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8 md:mb-12">
+          <h1 className="font-bold text-2xl md:text-3xl text-black">
+            What's My Cheva?
+          </h1>
         </div>
-        <div className="bg-gray-300 py-10 place-content-around mx-36 w-1/2">
-          <div className="max-w-5xl px-4 mx-auto">
-            <div className="grid items-center gap-y-10">
-              <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Grow business with Celebration.</h2>
-              <p class="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
+
+        {/* First Section */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+          <div className="w-full md:w-1/2 space-y-4">
+            <p className="text-black text-justify font-poppins text-lg md:text-xl lg:text-2xl leading-relaxed">
+              My Cheva adalah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry's standard dummy text ever since the 1500s
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src="./assets/about.svg"
+              alt="About illustration"
+              className="h-48 md:h-64 lg:h-80 w-auto object-contain"
+            />
           </div>
         </div>
-      </div> */}
-      <div class=" py-10 flex justify-center items-center bg-white sm:py-16 lg:py-24">
-        <div class="px-8 mx-auto sm:px-6 lg:px-8">
-          <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
-            <div class="ml-10">
-              <img src="./assets/services.svg" />
-            </div>
 
-            <div className="mx-36 ">
-              <h2 class="text-4xl font-bold leading-tight text-black">Perfect Solution for Your Talent.</h2>
-              <p class="mt-4 text-base leading-relaxed  text-gray-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-              <a href="#" title="" class="items-center justify-center hidden px-4 py-3 text-base font-medium text-white transition-all duration-200 mt-4 bg-[#F8A400] border border-transparent rounded-md lg:inline-flex hover:bg-blue-700 focus:bg-blue-700" role="button">
-                Read More
-              </a>
-            </div>
+        {/* Second Section */}
+        <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="w-full md:w-[60%] order-2 md:order-1">
+            <img
+              src="./assets/services.svg"
+              alt="Services illustration"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          <div className="w-full md:w-[40%] space-y-4 order-1 md:order-2 text-justify">
+            <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-black leading-tight">
+              Perfect Solution for Your Talent.
+            </h2>
+            <p className="text-gray-600 text-base leading-relaxed">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+            </p>
+            <a
+              href="#"
+              className="max-w-max inline-flex items-center justify-center px-4 py-3 text-base font-medium text-white bg-[#F8A400] hover:bg-blue-700 transition-all duration-200 rounded-md w-full md:w-auto"
+            >
+              Read More
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
